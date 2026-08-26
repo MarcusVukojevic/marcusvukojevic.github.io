@@ -1,56 +1,160 @@
 ---
+layout: home
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+title: "Marcus Vukojevic — AI Researcher & Engineer"
+excerpt: "PhD researcher in Artificial Intelligence at the University of Trento, working on trustworthy LLMs, symbolic reasoning, model efficiency, and applied AI."
+author_profile: false
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+<section class="mv-hero" aria-labelledby="hero-title">
+  <div class="mv-hero__copy">
+    <p class="mv-eyebrow"><span aria-hidden="true"></span> PhD researcher · University of Trento</p>
+    <h1 id="hero-title">Building AI that can <em>reason</em>, adapt, and earn trust.</h1>
+    <p class="mv-hero__lead">I’m Marcus Vukojevic, an AI researcher and full-stack engineer working where large language models, symbolic reasoning, model efficiency, and real-world systems meet.</p>
+    <div class="mv-actions" aria-label="Primary links">
+      <a class="mv-button mv-button--primary" href="/research/">Explore my research <span aria-hidden="true">→</span></a>
+      <a class="mv-button mv-button--ghost" href="/publications/">Read publications</a>
+    </div>
+    <dl class="mv-quick-facts" aria-label="At a glance">
+      <div><dt>Current</dt><dd>PhD in Artificial Intelligence</dd></div>
+      <div><dt>Based in</dt><dd>Trento · Dolomites</dd></div>
+      <div><dt>Approach</dt><dd>Research × engineering</dd></div>
+    </dl>
+  </div>
+  <figure class="mv-portrait">
+    <div class="mv-portrait__frame">
+      <img src="/images/marcus-vukojevic.jpg" alt="Marcus Vukojevic standing in a university corridor" width="800" height="1000" fetchpriority="high">
+    </div>
+    <figcaption><span>01</span> From the Dolomites to dependable AI.</figcaption>
+  </figure>
+</section>
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+<section class="mv-section mv-intro" aria-labelledby="intro-title">
+  <div class="mv-section-heading">
+    <p class="mv-kicker">About</p>
+    <h2 id="intro-title">Research with both feet in the real world.</h2>
+  </div>
+  <div class="mv-intro__body">
+    <p class="mv-large-copy">My path has always moved between academic research and products used by real people. That combination shapes the questions I ask: can an AI system be more reliable, more efficient, and still useful outside the lab?</p>
+    <p>I am a PhD student in Artificial Intelligence at the University of Trento. My current work focuses on grounded and trustworthy LLMs, including hallucination detection, probabilistic circuits, model compression, and neuro-symbolic reasoning. Alongside research, I have built AI products for legal services, linguistic minorities, smart agriculture, and industrial analysis.</p>
+    <a class="mv-text-link" href="/cv/">See my experience and education <span aria-hidden="true">↗</span></a>
+  </div>
+</section>
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+<section class="mv-section" aria-labelledby="focus-title">
+  <div class="mv-section-heading mv-section-heading--row">
+    <div>
+      <p class="mv-kicker">Research focus</p>
+      <h2 id="focus-title">Making intelligent systems more capable — and more accountable.</h2>
+    </div>
+    <a class="mv-text-link" href="/research/">All research <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="mv-focus-grid">
+    <article class="mv-focus-card mv-focus-card--wide">
+      <span class="mv-card-number">01</span>
+      <h3>Trustworthy language models</h3>
+      <p>Detecting hallucinations, grounding generations, and intervening only when a model’s internal state departs from factual behaviour.</p>
+      <div class="mv-tags"><span>LLM factuality</span><span>Probabilistic circuits</span><span>Grounding</span></div>
+    </article>
+    <article class="mv-focus-card">
+      <span class="mv-card-number">02</span>
+      <h3>Efficient AI</h3>
+      <p>Compression and pruning strategies that reduce model cost while preserving useful capability.</p>
+      <div class="mv-tags"><span>Pruning</span><span>Compression</span></div>
+    </article>
+    <article class="mv-focus-card">
+      <span class="mv-card-number">03</span>
+      <h3>Structured reasoning</h3>
+      <p>Combining learning with logic, symbolic methods, and structured representations.</p>
+      <div class="mv-tags"><span>Neuro-symbolic AI</span><span>SAT</span></div>
+    </article>
+    <article class="mv-focus-card mv-focus-card--wide">
+      <span class="mv-card-number">04</span>
+      <h3>Learning on graphs</h3>
+      <p>Graph regression across homogeneous and multi-relational program graphs, with benchmarks designed for meaningful comparison.</p>
+      <div class="mv-tags"><span>GNNs</span><span>Graph regression</span><span>RelSC</span></div>
+    </article>
+  </div>
+</section>
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+<section class="mv-section mv-publication-feature" aria-labelledby="featured-paper-title">
+  <div class="mv-publication-feature__meta">
+    <p class="mv-kicker">Featured research · 2026</p>
+    <p class="mv-journal">arXiv · cs.CL / cs.AI</p>
+  </div>
+  <div class="mv-publication-feature__content">
+    <h2 id="featured-paper-title">Hallucination as an Anomaly: Dynamic Intervention via Probabilistic Circuits</h2>
+    <p>PCNET treats hallucinations as geometric anomalies in an LLM’s residual stream, enabling targeted correction while preserving outputs that were already factual.</p>
+    <p class="mv-authors">Erik Nielsen · Elia Cunegatti · <strong>Marcus Vukojevic</strong> · Giovanni Iacca</p>
+    <div class="mv-actions">
+      <a class="mv-button mv-button--primary" href="https://arxiv.org/abs/2605.05953">Read the paper <span aria-hidden="true">↗</span></a>
+      <a class="mv-text-link" href="/publications/">All publications</a>
+    </div>
+  </div>
+</section>
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+<section class="mv-section" aria-labelledby="work-title">
+  <div class="mv-section-heading mv-section-heading--row">
+    <div>
+      <p class="mv-kicker">Selected work</p>
+      <h2 id="work-title">Ideas that left the notebook.</h2>
+    </div>
+    <a class="mv-text-link" href="/projects/">View projects <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="mv-project-grid">
+    <article class="mv-project-card mv-project-card--tone">
+      <div class="mv-project-card__top"><span>Language technology</span><span>01</span></div>
+      <h3>Tone</h3>
+      <p>Translation, grammar support, and micro-lessons for Ladin — trained with a custom corpus shaped together with local speakers.</p>
+      <a href="https://iltone.com/" aria-label="Visit the Tone website">Visit Tone <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="mv-project-card mv-project-card--space">
+      <div class="mv-project-card__top"><span>Space · AI</span><span>02</span></div>
+      <h3>SPaRKLE</h3>
+      <p>An ESA Academy-selected Space Rider experiment. I lead software and AI work for clustering gamma-ray events in orbit.</p>
+      <a href="https://www.esa.int/Education/ESA_Academy_Experiments_programme/Meet_the_Team_SPaRKLE" aria-label="Read about SPaRKLE on the ESA website">Read on ESA <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="mv-project-card mv-project-card--industry">
+      <div class="mv-project-card__top"><span>Applied AI</span><span>03</span></div>
+      <h3>AI in production</h3>
+      <p>LLM products and full-stack systems for legal services, industrial analysis, smart agriculture, and local communities.</p>
+      <a href="/cv/">Experience <span aria-hidden="true">→</span></a>
+    </article>
+  </div>
+</section>
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+<section class="mv-section mv-recognition" aria-labelledby="recognition-title">
+  <div class="mv-section-heading">
+    <p class="mv-kicker">Selected recognition</p>
+    <h2 id="recognition-title">Built with teams, tested in the world.</h2>
+  </div>
+  <div class="mv-recognition__list">
+    <a href="https://www.esa.int/Education/ESA_Academy_Experiments_programme/Meet_the_Team_SPaRKLE"><span class="mv-year">2024—27</span><strong>ESA Academy Experiments Programme</strong><span>SPaRKLE · Space Rider</span><i aria-hidden="true">↗</i></a>
+    <a href="https://mag.unitn.it/innovazione/103713/la-industrial-ai-challenge"><span class="mv-year">2021</span><strong>University of Trento AI Challenge</strong><span>Winning team · predictive maintenance</span><i aria-hidden="true">↗</i></a>
+    <a href="https://www.ladige.it/cronaca/2016/09/22/prestigiosa-vittoria-trentina-alla-nasa-challenge-2016-1.2662682"><span class="mv-year">2016</span><strong>NASA World Wind Challenge</strong><span>First prize · Sunrise</span><i aria-hidden="true">↗</i></a>
+  </div>
+</section>
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+<section class="mv-section mv-beyond" aria-labelledby="beyond-title">
+  <div class="mv-beyond__copy">
+    <p class="mv-kicker">Beyond AI</p>
+    <h2 id="beyond-title">Steep trails, rock walls, and cold rinks.</h2>
+    <p>I reset outdoors: running in the mountains, lining up for skyrunning races, and climbing whenever I can. Hockey has been a constant since my years in Val di Fassa; today I still play with the amateur scene in Trento.</p>
+    <a class="mv-button mv-button--light" href="/beyond-ai/">Away from the screen <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="mv-beyond__motif" aria-hidden="true">
+    <span class="mv-contour mv-contour--one"></span>
+    <span class="mv-contour mv-contour--two"></span>
+    <span class="mv-contour mv-contour--three"></span>
+    <p>run<br>climb<br>skate</p>
+  </div>
+</section>
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
-
-**Markdown generator**
-
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
-
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
-
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
-
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+<section class="mv-contact" aria-labelledby="contact-title">
+  <p class="mv-kicker">Let’s connect</p>
+  <h2 id="contact-title">Research question, ambitious product, or a trail recommendation?</h2>
+  <div class="mv-actions">
+    <a class="mv-button mv-button--primary" href="mailto:marcusvuk@gmail.com">marcusvuk@gmail.com <span aria-hidden="true">↗</span></a>
+    <a class="mv-button mv-button--ghost" href="https://www.linkedin.com/in/marcus-vukojevic-0a9011126/">LinkedIn</a>
+  </div>
+</section>

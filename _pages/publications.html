@@ -2,35 +2,79 @@
 layout: archive
 title: "Publications"
 permalink: /publications/
+excerpt: "Research publications on trustworthy language models, model compression, and graph machine learning."
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+{% assign publications = site.data.publications %}
+{% assign scholar_url = "https://scholar.google.com/citations?user=I-eJbyEAAAAJ" %}
 
-{% include base_path %}
+<div class="mv-page-intro">
+  <p class="mv-kicker">Research output</p>
+  <p class="mv-page-lead">Work on trustworthy language models, efficient neural architectures, and graph machine learning.</p>
+</div>
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
+<aside class="mv-scholar-banner" aria-label="Publication update information">
+  <div>
+    <strong>Follow my Google Scholar profile.</strong>
+    <p>This page refreshes weekly from OpenAlex and cross-checks each record against the official arXiv API.</p>
+  </div>
+  <a class="mv-button mv-button--primary" href="{{ scholar_url }}" target="_blank" rel="noopener noreferrer">
+    Google Scholar <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span>
+  </a>
+</aside>
+
+{% if publications and publications.size > 0 %}
+  <div class="mv-publication-list">
+    {% for publication in publications %}
+      {% assign publication_url = publication.arxiv_url | default: publication.doi_url | default: publication.openalex_url %}
+      <article class="mv-publication-card" itemscope itemtype="https://schema.org/ScholarlyArticle">
+        <div class="mv-publication-year">{{ publication.year | escape }}</div>
+        <div>
+          <h2 itemprop="headline">
+            {% if publication_url %}
+              <a href="{{ publication_url | escape }}" target="_blank" rel="noopener noreferrer" itemprop="url">
+                {{ publication.title | escape }}<span class="sr-only"> (opens in a new tab)</span>
+              </a>
+            {% else %}
+              {{ publication.title | escape }}
+            {% endif %}
+          </h2>
+
+          <p class="mv-publication-authors" itemprop="author">
+            {% for author in publication.authors %}
+              {% assign normalized_author = author | strip | downcase %}
+              {% unless forloop.first %}{% if forloop.last %} and {% else %}, {% endif %}{% endunless %}
+              {% if normalized_author == "marcus vukojevic" %}<strong>{{ author | escape }}</strong>{% else %}{{ author | escape }}{% endif %}
+            {% endfor %}
+          </p>
+
+          <p class="mv-publication-venue">
+            {% if publication.journal_ref %}{{ publication.journal_ref | escape }}{% else %}Preprint{% endif %}
+            {% if publication.arxiv_id %} · arXiv:{{ publication.arxiv_id | escape }}{% endif %}
+            {% if publication.primary_category %} · {{ publication.primary_category | escape }}{% endif %}
+          </p>
+
+          <div class="mv-publication-links" aria-label="Links for {{ publication.title | escape }}">
+            {% if publication.arxiv_url %}<a href="{{ publication.arxiv_url | escape }}" target="_blank" rel="noopener noreferrer">Abstract <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>{% endif %}
+            {% if publication.pdf_url %}<a href="{{ publication.pdf_url | escape }}" target="_blank" rel="noopener noreferrer">PDF <span aria-hidden="true">↓</span><span class="sr-only"> (opens in a new tab)</span></a>{% endif %}
+            {% if publication.doi_url %}<a href="{{ publication.doi_url | escape }}" target="_blank" rel="noopener noreferrer">DOI <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>{% endif %}
+            {% if publication.openalex_url and publication.arxiv_url == nil %}<a href="{{ publication.openalex_url | escape }}" target="_blank" rel="noopener noreferrer">OpenAlex <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>{% endif %}
+          </div>
+
+          {% if publication.abstract %}
+            <details class="mv-publication-abstract">
+              <summary>Read abstract</summary>
+              <p itemprop="abstract">{{ publication.abstract | escape }}</p>
+            </details>
+          {% endif %}
+        </div>
+      </article>
     {% endfor %}
-  {% endfor %}
+  </div>
 {% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
+  <div class="notice--info" role="status">
+    Publication metadata is temporarily unavailable. The complete record remains available on
+    <a href="{{ scholar_url }}" target="_blank" rel="noopener noreferrer">Google Scholar<span class="sr-only"> (opens in a new tab)</span></a>.
+  </div>
 {% endif %}
-
-
-

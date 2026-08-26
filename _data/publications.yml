@@ -1,0 +1,104 @@
+# Generated from the official OpenAlex Works and arXiv Atom APIs.
+# Do not edit manually; update scripts/sync_publications.py if the schema changes.
+- arxiv_id: "2606.02559"
+  title: "From Layers to Submodules: Rethinking Granularity in Replacement-Based LLM Compression"
+  authors:
+    - "Elia Cunegatti"
+    - "Marcus Vukojevic"
+    - "Erik Nielsen"
+    - "Giovanni Iacca"
+  published: "2026-06-01"
+  updated: "2026-06-01"
+  year: 2026
+  primary_category: "cs.CL"
+  categories:
+    - "cs.CL"
+    - "cs.AI"
+  arxiv_url: "https://arxiv.org/abs/2606.02559"
+  pdf_url: "https://arxiv.org/pdf/2606.02559"
+  abstract: >-
+    Post-training compression of Large Language Models (LLMs) removes entire architectural components,
+    either deleting them or replacing them with fitted modules. Existing replacement-based methods share
+    two design constraints: full-layer granularity and contiguous selection. We argue that this is
+    overly restrictive: in fact, redundancy in pretrained transformers is not confined to contiguous
+    regions, nor does it evenly distribute between Attention and FeedForward outputs, implying that
+    different strategies best approximate different submodule types and that removable components need
+    not cluster within contiguous depth ranges. Based on this intuition, we introduce SubFit
+    (Submodule-level Fitted residual replacement), which compresses LLMs at the submodule level:
+    Attention and FeedForward submodules are selected non-contiguously, and each receives its own
+    lightweight fitted residual bypass. SubFit operates post-training and requires only calibration
+    data. Across ten LLMs (five base, five instruction-tuned), five sparsity levels from 12.5% to 37.5%,
+    and four replacement-based baselines, SubFit achieves the best aggregate perplexity-accuracy
+    trade-off across the evaluated sparsity levels, with larger gains under aggressive compression. At
+    25% sparsity, it retains 84.6% of dense downstream accuracy and incurs 2.42x perplexity degradation,
+    against 81.6% and 4.34x for the strongest baselines, while delivering measurable inference speedup
+    and KV-cache savings. Code is available at https://github.com/eliacunegatti/SubFit.
+- arxiv_id: "2605.05953"
+  title: "Hallucination as an Anomaly: Dynamic Intervention via Probabilistic Circuits"
+  authors:
+    - "Erik Nielsen"
+    - "Elia Cunegatti"
+    - "Marcus Vukojevic"
+    - "Giovanni Iacca"
+  published: "2026-05-07"
+  updated: "2026-05-07"
+  year: 2026
+  primary_category: "cs.CL"
+  categories:
+    - "cs.CL"
+    - "cs.AI"
+  arxiv_url: "https://arxiv.org/abs/2605.05953"
+  pdf_url: "https://arxiv.org/pdf/2605.05953"
+  abstract: >-
+    One of the most critical challenges in Large Language Models is their tendency to hallucinate, i.e.,
+    produce factually incorrect responses. Existing approaches show promising results in terms of
+    hallucination correction, but still suffer from a main limitation: they apply corrections
+    indiscriminately to every token, corrupting also the originally correct generations. To overcome
+    this drawback, we propose PCNET, a Probabilistic Circuit trained as a tractable density estimator
+    over the LLM residual stream. The method detects hallucinations as geometric anomalies on the
+    factual manifold, which is done via exact Negative Log-Likelihood computation, hence without the
+    need for sampling, external verifiers, or weight modifications, as in existing techniques. To
+    demonstrate its effectiveness, we exploit PCNET as a dynamic gate that distinguishes hallucinated
+    from factual hidden states at each decoding step. This triggers our second main contribution,
+    PC-LDCD (Probabilistic Circuit Latent Density Contrastive Decoding), only when the latent geometry
+    deviates from factual regions, while leaving correct generations untouched. Across four LLMs,
+    ranging from 1B to 8B models, and four benchmarks covering conversational reasoning,
+    knowledge-intensive QA, reading comprehension, and truthfulness, PCNET achieves near-perfect
+    hallucination detection across CoQA, SQuAD v2.0, and TriviaQA, with AUROC reaching up to 99%.
+    Moreover, PC-LDCD obtains the highest True+Info, MC2, and MC3 scores on TruthfulQA in three out of
+    four models, in comparison with state-of-the-art baselines, while reducing the mean corruption rate
+    to 53.7% and achieving a preservation rate of 79.3%. Our proposed method is publicly available on
+    GitHub.
+- arxiv_id: "2505.23875"
+  title: "A Benchmark Dataset for Graph Regression with Homogeneous and Multi-Relational Variants"
+  authors:
+    - "Peter Samoaa"
+    - "Marcus Vukojevic"
+    - "Morteza Haghir Chehreghani"
+    - "Antonio Longa"
+  published: "2025-05-29"
+  updated: "2025-05-29"
+  year: 2025
+  primary_category: "cs.LG"
+  categories:
+    - "cs.LG"
+    - "cs.AI"
+  journal_ref: "Journal of Data-centric Machine Learning Research, 2026"
+  arxiv_url: "https://arxiv.org/abs/2505.23875"
+  pdf_url: "https://arxiv.org/pdf/2505.23875"
+  abstract: >-
+    Graph-level regression underpins many real-world applications, yet public benchmarks remain heavily
+    skewed toward molecular graphs and citation networks. This limited diversity hinders progress on
+    models that must generalize across both homogeneous and heterogeneous graph structures. We introduce
+    RelSC, a new graph-regression dataset built from program graphs that combine syntactic and semantic
+    information extracted from source code. Each graph is labelled with the execution-time cost of the
+    corresponding program, providing a continuous target variable that differs markedly from those found
+    in existing benchmarks. RelSC is released in two complementary variants. RelSC-H supplies rich node
+    features under a single (homogeneous) edge type, while RelSC-M preserves the original
+    multi-relational structure, connecting nodes through multiple edge types that encode distinct
+    semantic relationships. Together, these variants let researchers probe how representation choice
+    influences model behaviour. We evaluate a diverse set of graph neural network architectures on both
+    variants of RelSC. The results reveal consistent performance differences between the homogeneous and
+    multi-relational settings, emphasising the importance of structural representation. These findings
+    demonstrate RelSC's value as a challenging and versatile benchmark for advancing graph regression
+    methods.
