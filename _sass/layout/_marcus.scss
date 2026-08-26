@@ -92,8 +92,8 @@ body {
 .mv-hero {
   min-height: min(720px, calc(100vh - 90px));
   display: grid;
-  grid-template-columns: minmax(0, 1.18fr) minmax(300px, 0.82fr);
-  gap: clamp(2rem, 7vw, 6.8rem);
+  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
+  gap: clamp(2rem, 5vw, 4.8rem);
   align-items: center;
   padding: clamp(2.7rem, 7vw, 6.6rem) 0 clamp(4rem, 8vw, 7rem);
   border-bottom: 1px solid var(--mv-line);
@@ -301,17 +301,21 @@ body {
   span { color: var(--mv-accent); font-weight: 800; }
 }
 
-.mv-home-card {
-  margin: clamp(2rem, 5vw, 4.5rem) 0 0;
+.mv-portrait--card {
+  &::before {
+    inset: -1.15rem 1.4rem 2.7rem -1.15rem;
+    border-radius: 2rem;
+  }
 
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0;
+  .mv-portrait__frame {
+    aspect-ratio: 1731 / 909;
     border: 1px solid var(--mv-line);
-    border-radius: clamp(1rem, 2.5vw, 1.8rem);
-    box-shadow: var(--mv-shadow);
+    border-radius: 1.4rem;
+  }
+
+  .mv-portrait__frame img {
+    object-fit: cover;
+    filter: none;
   }
 }
 
@@ -939,7 +943,7 @@ body {
 }
 
 @media (max-width: 920px) {
-  .mv-hero { grid-template-columns: minmax(0, 1fr) minmax(250px, 0.64fr); gap: 2.5rem; }
+  .mv-hero { grid-template-columns: minmax(0, 1fr) minmax(320px, 0.9fr); gap: 2rem; }
   .mv-focus-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .mv-focus-card--wide { grid-column: span 1; }
   .mv-project-grid { grid-template-columns: 1fr; }

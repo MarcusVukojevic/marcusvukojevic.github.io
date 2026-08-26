@@ -9,8 +9,8 @@ author_profile: false
 <section class="mv-hero" aria-labelledby="hero-title">
   <div class="mv-hero__copy">
     <p class="mv-eyebrow"><span aria-hidden="true"></span> PhD researcher · University of Trento</p>
-    <h1 id="hero-title">Building AI that can <em>reason</em>, adapt, and earn trust.</h1>
-    <p class="mv-hero__lead">I’m Marcus Vukojevic, an AI researcher and full-stack engineer working where large language models, one-step graph generation, model efficiency, and real-world systems meet.</p>
+    <h1 id="hero-title">Turning ambitious research questions into AI systems that <em>work.</em></h1>
+    <p class="mv-hero__lead">I’m Marcus Vukojevic, an AI researcher and full-stack engineer working across trustworthy language models, one-step graph generation, model efficiency, and products built for real users.</p>
     <div class="mv-actions" aria-label="Primary links">
       <a class="mv-button mv-button--primary" href="/research/">Explore my research <span aria-hidden="true">→</span></a>
       <a class="mv-button mv-button--ghost" href="/publications/">Read publications</a>
@@ -21,17 +21,13 @@ author_profile: false
       <div><dt>Approach</dt><dd>Research × engineering</dd></div>
     </dl>
   </div>
-  <figure class="mv-portrait">
+  <figure class="mv-portrait mv-portrait--card">
     <div class="mv-portrait__frame">
-      <img src="/images/marcus-vukojevic.jpg" alt="Marcus Vukojevic crossing the finish line at a mountain race" width="1800" height="1200" fetchpriority="high">
+      <img src="/images/og.jpg" alt="Editorial card for Marcus Vukojevic with a mountain runner and the words AI that can reason, adapt, and earn trust." width="1731" height="909" fetchpriority="high">
     </div>
-    <figcaption><span>01</span> From the Dolomites to dependable AI.</figcaption>
+    <figcaption><span>01</span> Research, engineering, and life beyond the lab.</figcaption>
   </figure>
 </section>
-
-<figure class="mv-home-card">
-  <img src="/images/og.jpg" alt="Marcus Vukojevic running, with the message AI that can reason, adapt, and earn trust." width="1731" height="909" loading="lazy">
-</figure>
 
 <section class="mv-section mv-intro" aria-labelledby="intro-title">
   <div class="mv-section-heading">
