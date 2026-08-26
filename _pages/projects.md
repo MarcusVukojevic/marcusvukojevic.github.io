@@ -2,7 +2,7 @@
 layout: single
 title: "Projects"
 permalink: /projects/
-excerpt: "Selected projects spanning language technology, space research, industrial AI, and production LLM systems."
+excerpt: "Selected projects spanning hospitality AI, language technology, space research, industrial AI, and production LLM systems."
 author_profile: true
 ---
 
@@ -43,6 +43,23 @@ author_profile: true
         <div class="mv-actions">
           <a class="mv-button mv-button--light" href="https://www.esa.int/Education/ESA_Academy_Experiments_programme/Meet_the_Team_SPaRKLE">ESA profile <span aria-hidden="true">↗</span></a>
           <a class="mv-text-link mv-text-link--light" href="https://pressroom.unitn.it/comunicato-stampa/ready-space">UniTrento story</a>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="mv-case-study mv-case-study--lidy">
+    <header><p>Hospitality AI · Live product</p><span>03</span></header>
+    <div class="mv-case-study__body">
+      <div>
+        <h2>Lidy</h2>
+        <p class="mv-case-study__lead">A multilingual AI guest assistant for hotels, apartments, and B&amp;Bs.</p>
+      </div>
+      <div>
+        <p>Guests access property-specific help through room QR codes and receive instant, 24/7 answers about services, practical stay information, and local recommendations.</p>
+        <p>Accommodation teams can create property profiles, generate personalized QR codes, and integrate their own local content and partners.</p>
+        <div class="mv-actions">
+          <a class="mv-button mv-button--primary" href="https://lidy.guide/">Open Lidy <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </div>

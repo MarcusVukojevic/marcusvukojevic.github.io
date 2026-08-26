@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MARCUS VUKOJEVIC — PERSONAL SITE
+   MARCUS VUKOJEVIC - PERSONAL SITE
    ========================================================================== */
 
 :root {
@@ -301,6 +301,20 @@ body {
   span { color: var(--mv-accent); font-weight: 800; }
 }
 
+.mv-home-card {
+  margin: clamp(2rem, 5vw, 4.5rem) 0 0;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border: 1px solid var(--mv-line);
+    border-radius: clamp(1rem, 2.5vw, 1.8rem);
+    box-shadow: var(--mv-shadow);
+  }
+}
+
 .mv-section {
   padding: clamp(4.8rem, 9vw, 8rem) 0;
   border-bottom: 1px solid var(--mv-line);
@@ -463,7 +477,7 @@ body {
 
   &--tone { color: #12271f; background: #dbe8d8; }
   &--space { color: #fff; background: #243f51; }
-  &--industry { color: #2d241c; background: #eadfcf; }
+  &--lidy { color: #2d241c; background: #eadfcf; }
 
   h3 {
     margin: auto 0 0.85rem;
@@ -728,6 +742,7 @@ body {
 
   &--tone { color: #14261f; background: #dbe8d8; }
   &--space { color: #fff; background: #233d4d; }
+  &--lidy { color: var(--mv-ink); background: var(--mv-sand); }
 
   header {
     display: flex;
@@ -747,10 +762,18 @@ body {
   gap: clamp(2rem, 6vw, 5rem);
   padding-top: clamp(2.4rem, 5vw, 4rem);
 
+  > div { min-width: 0; }
+
   h2 { margin: 0 0 1rem; color: inherit; font-size: clamp(3rem, 7vw, 6rem); letter-spacing: -0.07em; }
   p { color: inherit; opacity: 0.78; line-height: 1.7; }
   .mv-case-study__lead { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 1.25rem; line-height: 1.45; }
   .mv-actions { margin-top: 1.7rem; }
+}
+
+@media (min-width: 701px) {
+  .mv-case-study--space .mv-case-study__body h2 {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+  }
 }
 
 .mv-compact-grid,

@@ -48,7 +48,8 @@ ARXIV_URL_PATTERN = re.compile(r"arxiv\.org/(?:abs|pdf)/(\d{4}\.\d{4,5})", re.IG
 def normalize(value: object | None) -> str:
     """Collapse formatting whitespace into a stable single-line value."""
 
-    return re.sub(r"\s+", " ", str(value or "")).strip()
+    text = str(value or "").replace("\u2014", " - ")
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def normalize_title(value: object | None) -> str:

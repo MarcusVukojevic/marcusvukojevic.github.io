@@ -2,20 +2,20 @@
 layout: single
 title: "Research"
 permalink: /research/
-excerpt: "Research on trustworthy language models, model efficiency, structured reasoning, and graph machine learning."
+excerpt: "Research on trustworthy language models, model efficiency, one-step graph generation, and graph machine learning."
 author_profile: true
 ---
 
 <div class="mv-page-intro">
   <p class="mv-kicker">Research</p>
-  <p class="mv-page-lead">I study how intelligent systems can become more reliable, efficient, and structurally aware — without losing the flexibility that makes modern AI useful.</p>
+  <p class="mv-page-lead">I study how intelligent systems can become more reliable, efficient, and structurally aware without losing the flexibility that makes modern AI useful.</p>
 </div>
 
 <div class="mv-research-themes">
   <article>
     <span>01</span>
     <h2>Trustworthy & grounded LLMs</h2>
-    <p>My PhD work at the University of Trento investigates ways to detect when a language model leaves the factual manifold and to ground its behaviour through structured and symbolic reasoning. The goal is selective intervention: correct what is unreliable while preserving what already works.</p>
+    <p>My PhD work at the University of Trento investigates ways to detect when a language model leaves the factual manifold. The goal is selective intervention: correct what is unreliable while preserving what already works.</p>
     <div class="mv-tags"><span>Hallucination detection</span><span>Grounding</span><span>Probabilistic circuits</span></div>
   </article>
   <article>
@@ -26,9 +26,9 @@ author_profile: true
   </article>
   <article>
     <span>03</span>
-    <h2>Neuro-symbolic & structured reasoning</h2>
-    <p>My background in SAT, logic, genetic programming, and deterministic planning informs a broader question: how can learned systems use explicit structure to reason more consistently? Related work also explores search-based pruning and tensor-decomposition problems.</p>
-    <div class="mv-tags"><span>Symbolic reasoning</span><span>SAT</span><span>Search</span></div>
+    <h2>One-step graph generation</h2>
+    <p>I explore models that produce complete graphs in one neural evaluation. I am interested in how direct generation can support useful and valid outputs across structured domains.</p>
+    <div class="mv-tags"><span>Graph generation</span><span>Generative models</span><span>Structured data</span></div>
   </article>
   <article>
     <span>04</span>
@@ -51,7 +51,7 @@ author_profile: true
       <div><h3><a href="https://arxiv.org/abs/2605.05953">Hallucination as an Anomaly: Dynamic Intervention via Probabilistic Circuits</a></h3><p>PCNET detects anomalous hidden states and gates corrective decoding only when needed.</p></div>
     </article>
     <article>
-      <time datetime="2025">2025—26</time>
+      <time datetime="2025">2025-26</time>
       <div><h3><a href="https://arxiv.org/abs/2505.23875">A Benchmark Dataset for Graph Regression with Homogeneous and Multi-Relational Variants</a></h3><p>RelSC provides program-graph benchmarks for homogeneous and heterogeneous graph regression; released on arXiv in 2025 and published in DMLR in 2026.</p></div>
     </article>
   </div>
@@ -63,6 +63,6 @@ author_profile: true
     <p class="mv-kicker">Collaboration</p>
     <h2 id="collaboration-title">Good research gets better in the open.</h2>
   </div>
-  <p>I am interested in collaborations around factuality, efficient LLMs, neuro-symbolic methods, and applied AI systems. If your question sits between research and implementation, we will probably have plenty to discuss.</p>
+  <p>I am interested in collaborations around factuality, efficient LLMs, one-step graph generation, and applied AI systems. If your question sits between research and implementation, we will probably have plenty to discuss.</p>
   <a class="mv-text-link" href="mailto:marcusvuk@gmail.com">Start a conversation <span aria-hidden="true">↗</span></a>
 </section>

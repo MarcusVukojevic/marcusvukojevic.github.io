@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Marcus Vukojevic"
 title_separator          : "-"
 name                     : &name "Marcus Vukojevic"
-description              : &description "PhD researcher in Artificial Intelligence at the University of Trento, working on trustworthy LLMs, symbolic reasoning, model efficiency, and applied AI."
+description              : &description "PhD researcher in Artificial Intelligence at the University of Trento, working on trustworthy LLMs, one-step graph generation, model efficiency, and applied AI."
 url                      : https://marcusvukojevic.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -144,7 +144,7 @@ facebook:
   app_id                 :
   publisher              :
 og_image                 : "og.jpg"
-og_description           : "Marcus Vukojevic — AI that can reason, adapt, and earn trust."
+og_description           : "Marcus Vukojevic: AI that can reason, adapt, and earn trust."
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:

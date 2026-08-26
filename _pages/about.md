@@ -1,8 +1,8 @@
 ---
 layout: home
 permalink: /
-title: "Marcus Vukojevic — AI Researcher & Engineer"
-excerpt: "PhD researcher in Artificial Intelligence at the University of Trento, working on trustworthy LLMs, symbolic reasoning, model efficiency, and applied AI."
+title: "Marcus Vukojevic | AI Researcher & Engineer"
+excerpt: "PhD researcher in Artificial Intelligence at the University of Trento, working on trustworthy LLMs, one-step graph generation, model efficiency, and applied AI."
 author_profile: false
 ---
 
@@ -10,7 +10,7 @@ author_profile: false
   <div class="mv-hero__copy">
     <p class="mv-eyebrow"><span aria-hidden="true"></span> PhD researcher · University of Trento</p>
     <h1 id="hero-title">Building AI that can <em>reason</em>, adapt, and earn trust.</h1>
-    <p class="mv-hero__lead">I’m Marcus Vukojevic, an AI researcher and full-stack engineer working where large language models, symbolic reasoning, model efficiency, and real-world systems meet.</p>
+    <p class="mv-hero__lead">I’m Marcus Vukojevic, an AI researcher and full-stack engineer working where large language models, one-step graph generation, model efficiency, and real-world systems meet.</p>
     <div class="mv-actions" aria-label="Primary links">
       <a class="mv-button mv-button--primary" href="/research/">Explore my research <span aria-hidden="true">→</span></a>
       <a class="mv-button mv-button--ghost" href="/publications/">Read publications</a>
@@ -23,11 +23,15 @@ author_profile: false
   </div>
   <figure class="mv-portrait">
     <div class="mv-portrait__frame">
-      <img src="/images/marcus-vukojevic.jpg" alt="Marcus Vukojevic standing in a university corridor" width="800" height="1000" fetchpriority="high">
+      <img src="/images/marcus-vukojevic.jpg" alt="Marcus Vukojevic crossing the finish line at a mountain race" width="1800" height="1200" fetchpriority="high">
     </div>
     <figcaption><span>01</span> From the Dolomites to dependable AI.</figcaption>
   </figure>
 </section>
+
+<figure class="mv-home-card">
+  <img src="/images/og.jpg" alt="Marcus Vukojevic running, with the message AI that can reason, adapt, and earn trust." width="1731" height="909" loading="lazy">
+</figure>
 
 <section class="mv-section mv-intro" aria-labelledby="intro-title">
   <div class="mv-section-heading">
@@ -36,7 +40,7 @@ author_profile: false
   </div>
   <div class="mv-intro__body">
     <p class="mv-large-copy">My path has always moved between academic research and products used by real people. That combination shapes the questions I ask: can an AI system be more reliable, more efficient, and still useful outside the lab?</p>
-    <p>I am a PhD student in Artificial Intelligence at the University of Trento. My current work focuses on grounded and trustworthy LLMs, including hallucination detection, probabilistic circuits, model compression, and neuro-symbolic reasoning. Alongside research, I have built AI products for legal services, linguistic minorities, smart agriculture, and industrial analysis.</p>
+    <p>I am a PhD student in Artificial Intelligence at the University of Trento. My current work focuses on trustworthy LLMs and one-step graph generation, including hallucination detection, probabilistic circuits, generative models, and model compression. Alongside research, I have built AI products for legal services, linguistic minorities, smart agriculture, and industrial analysis.</p>
     <a class="mv-text-link" href="/cv/">See my experience and education <span aria-hidden="true">↗</span></a>
   </div>
 </section>
@@ -45,7 +49,7 @@ author_profile: false
   <div class="mv-section-heading mv-section-heading--row">
     <div>
       <p class="mv-kicker">Research focus</p>
-      <h2 id="focus-title">Making intelligent systems more capable — and more accountable.</h2>
+      <h2 id="focus-title">Making intelligent systems more capable and more accountable.</h2>
     </div>
     <a class="mv-text-link" href="/research/">All research <span aria-hidden="true">→</span></a>
   </div>
@@ -64,9 +68,9 @@ author_profile: false
     </article>
     <article class="mv-focus-card">
       <span class="mv-card-number">03</span>
-      <h3>Structured reasoning</h3>
-      <p>Combining learning with logic, symbolic methods, and structured representations.</p>
-      <div class="mv-tags"><span>Neuro-symbolic AI</span><span>SAT</span></div>
+      <h3>One-step graph generation</h3>
+      <p>Developing models that generate complete graphs in a single neural step, with an emphasis on useful and valid structured outputs.</p>
+      <div class="mv-tags"><span>Graph generation</span><span>Generative models</span><span>Graph ML</span></div>
     </article>
     <article class="mv-focus-card mv-focus-card--wide">
       <span class="mv-card-number">04</span>
@@ -105,7 +109,7 @@ author_profile: false
     <article class="mv-project-card mv-project-card--tone">
       <div class="mv-project-card__top"><span>Language technology</span><span>01</span></div>
       <h3>Tone</h3>
-      <p>Translation, grammar support, and micro-lessons for Ladin — trained with a custom corpus shaped together with local speakers.</p>
+      <p>Translation, grammar support, and micro-lessons for Ladin, trained with a custom corpus shaped together with local speakers.</p>
       <a href="https://iltone.com/" aria-label="Visit the Tone website">Visit Tone <span aria-hidden="true">↗</span></a>
     </article>
     <article class="mv-project-card mv-project-card--space">
@@ -114,11 +118,11 @@ author_profile: false
       <p>An ESA Academy-selected Space Rider experiment. I lead software and AI work for clustering gamma-ray events in orbit.</p>
       <a href="https://www.esa.int/Education/ESA_Academy_Experiments_programme/Meet_the_Team_SPaRKLE" aria-label="Read about SPaRKLE on the ESA website">Read on ESA <span aria-hidden="true">↗</span></a>
     </article>
-    <article class="mv-project-card mv-project-card--industry">
-      <div class="mv-project-card__top"><span>Applied AI</span><span>03</span></div>
-      <h3>AI in production</h3>
-      <p>LLM products and full-stack systems for legal services, industrial analysis, smart agriculture, and local communities.</p>
-      <a href="/cv/">Experience <span aria-hidden="true">→</span></a>
+    <article class="mv-project-card mv-project-card--lidy">
+      <div class="mv-project-card__top"><span>Hospitality AI · Live</span><span>03</span></div>
+      <h3>Lidy</h3>
+      <p>Multilingual, QR-based AI assistance for hospitality guests, available 24/7 with property information and local guidance.</p>
+      <a href="https://lidy.guide/">Open Lidy <span aria-hidden="true">↗</span></a>
     </article>
   </div>
 </section>
@@ -129,7 +133,7 @@ author_profile: false
     <h2 id="recognition-title">Built with teams, tested in the world.</h2>
   </div>
   <div class="mv-recognition__list">
-    <a href="https://www.esa.int/Education/ESA_Academy_Experiments_programme/Meet_the_Team_SPaRKLE"><span class="mv-year">2024—27</span><strong>ESA Academy Experiments Programme</strong><span>SPaRKLE · Space Rider</span><i aria-hidden="true">↗</i></a>
+    <a href="https://www.esa.int/Education/ESA_Academy_Experiments_programme/Meet_the_Team_SPaRKLE"><span class="mv-year">2024-27</span><strong>ESA Academy Experiments Programme</strong><span>SPaRKLE · Space Rider</span><i aria-hidden="true">↗</i></a>
     <a href="https://mag.unitn.it/innovazione/103713/la-industrial-ai-challenge"><span class="mv-year">2021</span><strong>University of Trento AI Challenge</strong><span>Winning team · predictive maintenance</span><i aria-hidden="true">↗</i></a>
     <a href="https://www.ladige.it/cronaca/2016/09/22/prestigiosa-vittoria-trentina-alla-nasa-challenge-2016-1.2662682"><span class="mv-year">2016</span><strong>NASA World Wind Challenge</strong><span>First prize · Sunrise</span><i aria-hidden="true">↗</i></a>
   </div>

@@ -2,7 +2,7 @@
 layout: single
 title: "Beyond AI"
 permalink: /beyond-ai/
-excerpt: "Mountain running, skyrunning, climbing, and ice hockey — the places where I reset away from research."
+excerpt: "Mountain running, skyrunning, climbing, and ice hockey: the places where I reset away from research."
 author_profile: true
 ---
 
@@ -38,6 +38,6 @@ author_profile: true
     <div class="mv-passion-card__icon" aria-hidden="true"><i class="fas fa-hockey-puck"></i></div>
     <p class="mv-kicker">Ice hockey</p>
     <h2>Still at home on the ice.</h2>
-    <p>I spent many years playing hockey in Val di Fassa. I now play with the amateur hockey community in Trento — still drawn to the speed, teamwork, and instinct of the game.</p>
+    <p>I spent many years playing hockey in Val di Fassa. I now play with the amateur hockey community in Trento, still drawn to the speed, teamwork, and instinct of the game.</p>
   </article>
 </div>

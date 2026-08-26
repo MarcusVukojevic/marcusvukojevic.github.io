@@ -136,6 +136,9 @@ ARXIV_FIXTURE = b"""<?xml version="1.0" encoding="UTF-8"?>
 
 
 class PublicationSyncTests(unittest.TestCase):
+    def test_normalize_replaces_em_dashes(self):
+        self.assertEqual(sync_publications.normalize("hard\u2014decoded"), "hard - decoded")
+
     def test_remote_links_require_https_and_expected_hosts(self):
         self.assertEqual(
             sync_publications.trusted_https_url("https://openalex.org/W123", "openalex.org"),
