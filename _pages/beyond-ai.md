@@ -2,13 +2,13 @@
 layout: single
 title: "Beyond AI"
 permalink: /beyond-ai/
-excerpt: "Mountain running, skyrunning, climbing, and ice hockey: the places where I reset away from research."
+excerpt: "Mountain running, skyrunning, climbing, ice hockey, astronomy, and astrophotography beyond research."
 author_profile: true
 ---
 
 <div class="mv-page-intro mv-page-intro--sport">
   <p class="mv-kicker">Beyond AI</p>
-  <p class="mv-page-lead">The best counterweight to abstract problems is something immediate: a steep trail, the next hold, or a puck moving faster than your plan.</p>
+  <p class="mv-page-lead">The best counterweight to abstract problems is something immediate: a steep trail, the next hold, a fast shift on the ice, or a clear night under the stars.</p>
 </div>
 
 <div class="mv-passion-grid">
@@ -40,4 +40,36 @@ author_profile: true
     <h2>Still at home on the ice.</h2>
     <p>I spent many years playing hockey in Val di Fassa. I now play with the amateur hockey community in Trento, still drawn to the speed, teamwork, and instinct of the game.</p>
   </article>
+  <article class="mv-passion-card mv-passion-card--astro mv-passion-card--wide">
+    <div class="mv-passion-card__index">05</div>
+    <div class="mv-passion-card__icon" aria-hidden="true"><i class="fas fa-star"></i></div>
+    <p class="mv-kicker">Astronomy &amp; astrophotography</p>
+    <h2>A different sense of scale.</h2>
+    <p>I am passionate about astronomy and astrophotography. They bring curiosity, patience, and technology together, revealing details in the night sky that the eye alone can miss.</p>
+  </article>
 </div>
+
+<section class="mv-photo-journal" aria-labelledby="photo-journal-title">
+  <div class="mv-photo-journal__heading">
+    <p class="mv-kicker">A few frames</p>
+    <h2 id="photo-journal-title">Beyond the screen.</h2>
+  </div>
+  <div class="mv-photo-journal__grid">
+    <figure class="mv-photo-journal__item mv-photo-journal__item--valley">
+      <img src="/images/beyond-ai/dolomites.jpg" alt="A summer view across the forested valleys and rocky peaks of the Dolomites" width="1400" height="1866" loading="lazy" decoding="async">
+      <figcaption>Mountain lines</figcaption>
+    </figure>
+    <figure class="mv-photo-journal__item mv-photo-journal__item--milky-way">
+      <img src="/images/beyond-ai/milky-way.jpg" alt="The Milky Way stretching across a dark, star-filled sky" width="1800" height="1350" loading="lazy" decoding="async">
+      <figcaption>Milky Way</figcaption>
+    </figure>
+    <figure class="mv-photo-journal__item mv-photo-journal__item--hockey">
+      <img src="/images/beyond-ai/hockey.jpg" alt="Marcus Vukojevic skating in a yellow and black jersey during an ice hockey game" width="1200" height="1728" loading="lazy" decoding="async">
+      <figcaption>On the ice</figcaption>
+    </figure>
+    <figure class="mv-photo-journal__item mv-photo-journal__item--deep-sky">
+      <img src="/images/beyond-ai/deep-sky.jpg" alt="A spiral galaxy surrounded by a dense field of stars" width="1080" height="1774" loading="lazy" decoding="async">
+      <figcaption>Deep sky</figcaption>
+    </figure>
+  </div>
+</section>

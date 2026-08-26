@@ -92,8 +92,8 @@ body {
 .mv-hero {
   min-height: min(720px, calc(100vh - 90px));
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
-  gap: clamp(2rem, 5vw, 4.8rem);
+  grid-template-columns: minmax(0, 0.82fr) minmax(500px, 1.18fr);
+  gap: clamp(1.75rem, 4vw, 3.6rem);
   align-items: center;
   padding: clamp(2.7rem, 7vw, 6.6rem) 0 clamp(4rem, 8vw, 7rem);
   border-bottom: 1px solid var(--mv-line);
@@ -543,8 +543,8 @@ body {
 
 .mv-beyond {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.7fr);
-  gap: 4rem;
+  grid-template-columns: minmax(0, 0.86fr) minmax(360px, 1.14fr);
+  gap: clamp(2.5rem, 5vw, 4.5rem);
   align-items: center;
   padding-inline: clamp(1.8rem, 6vw, 5.3rem);
   color: #fff;
@@ -566,33 +566,45 @@ body {
   p:not(.mv-kicker) { max-width: 670px; color: rgba(255,255,255,0.78); line-height: 1.75; }
 }
 
-.mv-beyond__motif {
-  position: relative;
-  min-height: 360px;
+.mv-beyond__gallery {
   display: grid;
-  place-items: center;
-
-  p {
-    position: relative;
-    z-index: 2;
-    margin: 0 !important;
-    color: #fff !important;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(2.8rem, 5vw, 4.5rem);
-    font-style: italic;
-    line-height: 0.95 !important;
-    text-align: center;
-  }
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+  align-items: stretch;
+  padding: clamp(1.6rem, 4vw, 3.2rem) 0;
 }
 
-.mv-contour {
-  position: absolute;
-  border: 1px solid rgba(255, 255, 255, 0.34);
-  border-radius: 46% 54% 55% 45% / 55% 44% 56% 45%;
-  transform: rotate(-18deg);
-  &--one { width: 270px; height: 210px; }
-  &--two { width: 340px; height: 285px; transform: rotate(12deg); }
-  &--three { width: 420px; height: 340px; transform: rotate(-5deg); }
+.mv-beyond__photo {
+  min-width: 0;
+  min-height: 150px;
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 1rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+    border-radius: 0;
+  }
+
+  &--astro {
+    grid-column: 1 / -1;
+    aspect-ratio: 16 / 8;
+    img { object-position: 55% 50%; }
+  }
+
+  &--mountains {
+    aspect-ratio: 4 / 3;
+    img { object-position: 50% 74%; }
+  }
+
+  &--hockey {
+    aspect-ratio: 4 / 3;
+    img { object-position: 50% 76%; }
+  }
 }
 
 .mv-contact {
@@ -819,6 +831,21 @@ body {
   &--sky { color: #fff; background: #9e3825; }
   &--climb { color: #2d251f; background: #e9dfd0; }
   &--hockey { color: #fff; background: #263f50; }
+  &--astro {
+    color: #fff;
+    background:
+      radial-gradient(circle at 18% 24%, rgba(255, 255, 255, 0.26) 0 1px, transparent 2px),
+      radial-gradient(circle at 74% 36%, rgba(255, 255, 255, 0.2) 0 1px, transparent 2px),
+      radial-gradient(circle at 55% 78%, rgba(244, 134, 108, 0.45) 0 1px, transparent 2px),
+      linear-gradient(135deg, #101a25, #20354a);
+    background-size: 90px 90px, 130px 130px, 170px 170px, auto;
+  }
+
+  &--wide {
+    grid-column: 1 / -1;
+    min-height: 360px;
+    p:last-child { max-width: 760px; }
+  }
 
   .mv-kicker { margin-top: auto; color: inherit; opacity: 0.8; }
   h2 { margin: 0 0 0.85rem; color: inherit; font-size: clamp(1.7rem, 3.5vw, 2.65rem); letter-spacing: -0.045em; }
@@ -839,6 +866,83 @@ body {
   border: 1px solid currentColor;
   border-radius: 50%;
   opacity: 0.62;
+}
+
+.mv-photo-journal {
+  margin-top: clamp(4rem, 8vw, 7rem);
+  padding-top: clamp(2.4rem, 5vw, 4rem);
+  border-top: 1px solid var(--mv-line);
+}
+
+.mv-photo-journal__heading {
+  margin-bottom: 2rem;
+
+  .mv-kicker { margin-bottom: 0.75rem; }
+
+  h2 {
+    margin: 0;
+    padding-bottom: 0;
+    color: var(--mv-ink);
+    font-size: clamp(2rem, 4vw, 3.45rem);
+    letter-spacing: -0.052em;
+    border-bottom: 0;
+  }
+}
+
+.mv-photo-journal__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(260px, 1fr));
+  gap: 0.85rem;
+}
+
+.mv-photo-journal__item {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  margin: 0;
+  border-radius: 1.15rem;
+  background: var(--mv-card);
+
+  &--valley { grid-column: 1 / 5; grid-row: 1 / 3; }
+  &--milky-way { grid-column: 5 / 13; grid-row: 1; }
+  &--hockey { grid-column: 5 / 9; grid-row: 2; }
+  &--deep-sky { grid-column: 9 / 13; grid-row: 2; }
+
+  img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+    border-radius: 0;
+    transition: transform 300ms ease;
+  }
+
+  &--valley img { object-position: 50% 72%; }
+  &--milky-way img { object-position: 55% 50%; }
+  &--hockey img { object-position: 50% 76%; }
+  &--deep-sky img { object-position: 50% 60%; }
+
+  &:hover img { transform: scale(1.02); }
+
+  figcaption {
+    position: absolute;
+    right: 0.85rem;
+    bottom: 0.85rem;
+    margin: 0;
+    padding: 0.42rem 0.7rem;
+    color: #fff;
+    background: rgba(12, 20, 26, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 999px;
+    font-family: inherit;
+    font-size: 0.64rem;
+    font-style: normal;
+    font-weight: 750;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    backdrop-filter: blur(10px);
+  }
 }
 
 .mv-cv-section {
@@ -943,22 +1047,31 @@ body {
 }
 
 @media (max-width: 920px) {
-  .mv-hero { grid-template-columns: minmax(0, 1fr) minmax(320px, 0.9fr); gap: 2rem; }
+  .mv-hero { grid-template-columns: 1fr; gap: 3.4rem; }
+  .mv-portrait--card { width: 100%; }
+  .mv-portrait--card::before { left: -0.45rem; right: 0.65rem; }
   .mv-focus-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .mv-focus-card--wide { grid-column: span 1; }
   .mv-project-grid { grid-template-columns: 1fr; }
   .mv-project-card { min-height: 330px; }
   .mv-recognition { grid-template-columns: 1fr; }
   .mv-beyond { grid-template-columns: 1fr; }
-  .mv-beyond__motif { min-height: 250px; }
+  .mv-beyond__gallery {
+    height: clamp(340px, 38vw, 430px);
+    grid-template-rows: 1.08fr 0.92fr;
+    padding: 0;
+  }
+  .mv-beyond__photo { aspect-ratio: auto; }
 }
 
 @media (max-width: 700px) {
   .home-page { width: min(100% - 1.25rem, 1180px); padding-top: 0; }
-  .mv-hero { min-height: auto; grid-template-columns: 1fr; padding-top: 3.5rem; }
+  .mv-hero { min-height: auto; grid-template-columns: 1fr; gap: 0; padding-top: 3.5rem; }
   .mv-hero__copy { display: contents; }
   .mv-eyebrow, .mv-hero h1, .mv-hero__lead, .mv-actions { grid-column: 1; }
-  .mv-portrait { grid-row: 4; width: min(88%, 390px); margin: 0 auto; }
+  .mv-actions { grid-row: 4; }
+  .mv-portrait { grid-row: 5; width: min(88%, 390px); margin: 2.8rem auto 0; }
+  .mv-portrait--card { width: 100%; }
   .mv-quick-facts { grid-row: 6; grid-column: 1; }
   .mv-intro,
   .mv-publication-feature,
@@ -978,11 +1091,19 @@ body {
   .mv-publication-feature__meta { display: flex; justify-content: space-between; }
   .mv-recognition__list a { grid-template-columns: 66px 1fr auto; }
   .mv-recognition__list span:not(.mv-year) { display: none; }
-  .mv-contour--three { width: 330px; }
   .mv-note-card .mv-text-link,
   .mv-achievement-grid,
   .mv-skills-grid { grid-column: 1; }
   .mv-passion-card { min-height: 390px; }
+  .mv-passion-card--wide { grid-column: 1; }
+  .mv-photo-journal__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, auto));
+  }
+  .mv-photo-journal__item--milky-way { grid-column: 1 / -1; grid-row: 1; aspect-ratio: 16 / 10; }
+  .mv-photo-journal__item--valley { grid-column: 1; grid-row: 2 / 4; }
+  .mv-photo-journal__item--hockey { grid-column: 2; grid-row: 2; aspect-ratio: 4 / 3; }
+  .mv-photo-journal__item--deep-sky { grid-column: 2; grid-row: 3; aspect-ratio: 4 / 3; }
   .mv-timeline article { grid-template-columns: 1fr; gap: 0.55rem; }
   .mv-publication-card { grid-template-columns: 1fr; gap: 0.65rem; }
   .mv-scholar-banner { align-items: flex-start; flex-direction: column; }
@@ -997,9 +1118,16 @@ body {
   .mv-actions .mv-button { width: 100%; }
   .mv-publication-feature,
   .mv-beyond { padding-inline: 1.35rem; border-radius: 1.25rem; }
+  .mv-photo-journal__grid { grid-template-columns: 1fr; grid-template-rows: none; }
+  .mv-photo-journal__item { grid-column: 1; grid-row: auto; }
+  .mv-photo-journal__item--valley,
+  .mv-photo-journal__item--hockey,
+  .mv-photo-journal__item--deep-sky { aspect-ratio: 4 / 5; }
+  .mv-photo-journal__item--milky-way { aspect-ratio: 16 / 10; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .mv-button,
-  .mv-focus-card { transition: none; }
+  .mv-focus-card,
+  .mv-photo-journal__item img { transition: none; }
 }

@@ -2,7 +2,7 @@
 layout: home
 permalink: /
 title: "Marcus Vukojevic | AI Researcher & Engineer"
-excerpt: "PhD researcher in Artificial Intelligence at the University of Trento, working on trustworthy LLMs, one-step graph generation, model efficiency, and applied AI."
+excerpt: "AI researcher and full-stack engineer working on trustworthy models and graph generation, with a life beyond the lab in the mountains, on the ice, and under dark skies."
 author_profile: false
 ---
 
@@ -10,7 +10,7 @@ author_profile: false
   <div class="mv-hero__copy">
     <p class="mv-eyebrow"><span aria-hidden="true"></span> PhD researcher · University of Trento</p>
     <h1 id="hero-title">Researching AI. Building what <em>works.</em></h1>
-    <p class="mv-hero__lead">I’m Marcus Vukojevic, an AI researcher and full-stack engineer working across trustworthy language models, one-step graph generation, model efficiency, and products built for real users.</p>
+    <p class="mv-hero__lead">I’m Marcus Vukojevic, an AI researcher and full-stack engineer, drawn to ambitious questions and useful systems. The same curiosity takes me into the mountains, onto the ice, and out under dark skies with a camera.</p>
     <div class="mv-actions" aria-label="Primary links">
       <a class="mv-button mv-button--primary" href="/research/">Explore my research <span aria-hidden="true">→</span></a>
       <a class="mv-button mv-button--ghost" href="/publications/">Read publications</a>
@@ -23,7 +23,7 @@ author_profile: false
   </div>
   <figure class="mv-portrait mv-portrait--card">
     <div class="mv-portrait__frame">
-      <img src="/images/og.jpg" alt="Editorial card for Marcus Vukojevic with a mountain runner and the words AI that can reason, adapt, and earn trust." width="1731" height="909" fetchpriority="high">
+      <img src="/images/og.jpg" alt="Editorial card for Marcus Vukojevic with a mountain runner and the words Turning ambitious research questions into AI systems that work." width="1731" height="909" fetchpriority="high">
     </div>
     <figcaption><span>01</span> Research, engineering, and life beyond the lab.</figcaption>
   </figure>
@@ -138,15 +138,20 @@ author_profile: false
 <section class="mv-section mv-beyond" aria-labelledby="beyond-title">
   <div class="mv-beyond__copy">
     <p class="mv-kicker">Beyond AI</p>
-    <h2 id="beyond-title">Steep trails, rock walls, and cold rinks.</h2>
-    <p>I reset outdoors: running in the mountains, lining up for skyrunning races, and climbing whenever I can. Hockey has been a constant since my years in Val di Fassa; today I still play with the amateur scene in Trento.</p>
+    <h2 id="beyond-title">Steep trails, cold rinks, and dark skies.</h2>
+    <p>Beyond the lab, I reset in motion and under open skies: running and climbing in the Dolomites, playing hockey in Trento, and photographing the night sky whenever the forecast cooperates.</p>
     <a class="mv-button mv-button--light" href="/beyond-ai/">Away from the screen <span aria-hidden="true">→</span></a>
   </div>
-  <div class="mv-beyond__motif" aria-hidden="true">
-    <span class="mv-contour mv-contour--one"></span>
-    <span class="mv-contour mv-contour--two"></span>
-    <span class="mv-contour mv-contour--three"></span>
-    <p>run<br>climb<br>skate</p>
+  <div class="mv-beyond__gallery" aria-label="A glimpse beyond the lab">
+    <figure class="mv-beyond__photo mv-beyond__photo--astro">
+      <img src="/images/beyond-ai/milky-way.jpg" alt="The Milky Way stretching across a dark, star-filled sky" width="1800" height="1350" loading="lazy" decoding="async">
+    </figure>
+    <figure class="mv-beyond__photo mv-beyond__photo--mountains">
+      <img src="/images/beyond-ai/dolomites.jpg" alt="A summer view across the forested valleys and rocky peaks of the Dolomites" width="1400" height="1866" loading="lazy" decoding="async">
+    </figure>
+    <figure class="mv-beyond__photo mv-beyond__photo--hockey">
+      <img src="/images/beyond-ai/hockey.jpg" alt="Marcus Vukojevic skating in a yellow and black jersey during an ice hockey game" width="1200" height="1728" loading="lazy" decoding="async">
+    </figure>
   </div>
 </section>
 
