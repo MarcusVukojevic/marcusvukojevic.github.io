@@ -9,7 +9,7 @@ author_profile: false
 <section class="mv-hero" aria-labelledby="hero-title">
   <div class="mv-hero__copy">
     <p class="mv-eyebrow"><span aria-hidden="true"></span> PhD researcher · University of Trento</p>
-    <h1 id="hero-title">Turning ambitious research questions into AI systems that <em>work.</em></h1>
+    <h1 id="hero-title">Researching AI. Building what <em>works.</em></h1>
     <p class="mv-hero__lead">I’m Marcus Vukojevic, an AI researcher and full-stack engineer working across trustworthy language models, one-step graph generation, model efficiency, and products built for real users.</p>
     <div class="mv-actions" aria-label="Primary links">
       <a class="mv-button mv-button--primary" href="/research/">Explore my research <span aria-hidden="true">→</span></a>
