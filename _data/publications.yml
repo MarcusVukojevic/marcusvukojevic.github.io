@@ -36,39 +36,6 @@
     architectures as relaxed gradient training on NAS-Bench-101. The low generation cost may enable
     real-time candidate generation across discrete design tasks, supporting interactive exploration of
     constrained design spaces and rapid construction of candidate sets for downstream evaluation.
-- arxiv_id: "2606.02559"
-  title: "From Layers to Submodules: Rethinking Granularity in Replacement-Based LLM Compression"
-  authors:
-    - "Elia Cunegatti"
-    - "Marcus Vukojevic"
-    - "Erik Nielsen"
-    - "Giovanni Iacca"
-  published: "2026-06-01"
-  updated: "2026-08-26"
-  year: 2026
-  primary_category: "cs.CL"
-  categories:
-    - "cs.CL"
-    - "cs.AI"
-  arxiv_url: "https://arxiv.org/abs/2606.02559"
-  pdf_url: "https://arxiv.org/pdf/2606.02559"
-  abstract: >-
-    Post-training compression of Large Language Models (LLMs) removes entire architectural components,
-    either deleting them or replacing them with fitted modules. Existing replacement-based methods share
-    two design constraints: full-layer granularity and contiguous selection. We argue that this is
-    overly restrictive: in fact, redundancy in pretrained transformers is not confined to contiguous
-    regions, nor does it evenly distribute between Attention and FeedForward outputs, implying that
-    different strategies best approximate different submodule types and that removable components need
-    not cluster within contiguous depth ranges. Based on this intuition, we introduce SubFit
-    (Submodule-level Fitted residual replacement), which compresses LLMs at the submodule level:
-    Attention and FeedForward submodules are selected non-contiguously, and each receives its own
-    lightweight fitted residual bypass. SubFit operates post-training and requires only calibration
-    data. Across ten LLMs (five base, five instruction-tuned), five sparsity levels from 12.5% to 37.5%,
-    and four replacement-based baselines, SubFit achieves the best aggregate perplexity-accuracy
-    trade-off across the evaluated sparsity levels, with larger gains under aggressive compression. At
-    25% sparsity, it retains 84.6% of dense downstream accuracy and incurs 2.42x perplexity degradation,
-    against 81.6% and 4.34x for the strongest baselines, while delivering measurable inference speedup
-    and KV-cache savings. Code is available at https://github.com/eliacunegatti/SubFit.
 - arxiv_id: "2605.05953"
   title: "Hallucination as an Anomaly: Dynamic Intervention via Probabilistic Circuits"
   authors:
@@ -105,6 +72,41 @@
     four models, in comparison with state-of-the-art baselines, while reducing the mean corruption rate
     to 53.7% and achieving a preservation rate of 79.3%. Our proposed method is publicly available on
     GitHub.
+- arxiv_id: "2606.02559"
+  title: "From Layers to Submodules: Rethinking Granularity in Replacement-Based LLM Compression"
+  authors:
+    - "Elia Cunegatti"
+    - "Marcus Vukojevic"
+    - "Erik Nielsen"
+    - "Giovanni Iacca"
+  published: "2026-01-01"
+  updated: "2026-08-26"
+  year: 2026
+  primary_category: "cs.CL"
+  categories:
+    - "cs.CL"
+    - "cs.AI"
+  journal_ref: "Findings of the Association for Computational Linguistics: EMNLP (Findings of EMNLP)"
+  doi_url: "https://doi.org/10.18653/2026.findings-emnlp.150"
+  arxiv_url: "https://arxiv.org/abs/2606.02559"
+  pdf_url: "https://arxiv.org/pdf/2606.02559"
+  abstract: >-
+    Post-training compression of Large Language Models (LLMs) removes entire architectural components,
+    either deleting them or replacing them with fitted modules. Existing replacement-based methods share
+    two design constraints: full-layer granularity and contiguous selection. We argue that this is
+    overly restrictive: in fact, redundancy in pretrained transformers is not confined to contiguous
+    regions, nor does it evenly distribute between Attention and FeedForward outputs, implying that
+    different strategies best approximate different submodule types and that removable components need
+    not cluster within contiguous depth ranges. Based on this intuition, we introduce SubFit
+    (Submodule-level Fitted residual replacement), which compresses LLMs at the submodule level:
+    Attention and FeedForward submodules are selected non-contiguously, and each receives its own
+    lightweight fitted residual bypass. SubFit operates post-training and requires only calibration
+    data. Across ten LLMs (five base, five instruction-tuned), five sparsity levels from 12.5% to 37.5%,
+    and four replacement-based baselines, SubFit achieves the best aggregate perplexity-accuracy
+    trade-off across the evaluated sparsity levels, with larger gains under aggressive compression. At
+    25% sparsity, it retains 84.6% of dense downstream accuracy and incurs 2.42x perplexity degradation,
+    against 81.6% and 4.34x for the strongest baselines, while delivering measurable inference speedup
+    and KV-cache savings. Code is available at https://github.com/eliacunegatti/SubFit.
 - arxiv_id: "2505.23875"
   title: "A Benchmark Dataset for Graph Regression with Homogeneous and Multi-Relational Variants"
   authors:
